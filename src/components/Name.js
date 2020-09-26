@@ -3,7 +3,7 @@ import React from "react";
 const Name = ({ characterName, living }) => {
   return (
     <div>
-      {characterName} Status: {living}
+      {characterName} | Status: {living}
     </div>
   );
 };

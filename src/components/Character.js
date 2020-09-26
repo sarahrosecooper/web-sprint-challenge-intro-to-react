@@ -14,17 +14,25 @@ const CharacterContainer = styled.div`
   width: 29%;
   margin: 15px 17px 10px 1px;
 `;
+
+const MoveItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 const Character = ({ character }) => {
   console.log(character);
   return (
     <CharacterContainer>
-      <Name characterName={character.name} living={character.status} />
-      <Picture image={character.image} />
-      <Info
-        gender={character.gender}
-        species={character.species}
-        type={character.type}
-      />
+      <MoveItems>
+        <Name characterName={character.name} living={character.status} />
+        <Picture image={character.image} />
+        <Info
+          gender={character.gender}
+          species={character.species}
+          type={character.type}
+        />
+      </MoveItems>
     </CharacterContainer>
   );
 };
