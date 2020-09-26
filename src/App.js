@@ -5,8 +5,10 @@ import Character from "../src/components/Character";
 import styled from "styled-components";
 
 const CharacterCard = styled.div`
-  background-color: red;
-  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: pink;
+  width: 100%;
 `;
 
 const App = () => {
