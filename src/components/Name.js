@@ -1,7 +1,11 @@
 import React from "react";
 
-const Name = () => {
-  return <div>This is the name component</div>;
+const Name = ({ characterName, living }) => {
+  return (
+    <div>
+      {characterName} Status: {living}
+    </div>
+  );
 };
 
 export default Name;

@@ -4,12 +4,17 @@ import Name from "./Name";
 import Picture from "./Picture";
 import Info from "./Info";
 
-const Character = () => {
+const Character = ({ character }) => {
+  console.log(character);
   return (
     <div>
-      <Name />
-      <Picture />
-      <Info />
+      <Name characterName={character.name} living={character.status} />
+      <Picture image={character.image} />
+      <Info
+        gender={character.gender}
+        species={character.species}
+        type={character.type}
+      />
     </div>
   );
 };
