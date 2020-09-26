@@ -33,6 +33,7 @@ const App = () => {
   }, []);
 
   console.log(characters);
+  
   return (
     <CharacterCard>
       {characters.map((character) => {
