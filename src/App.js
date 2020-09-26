@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+import Character from "../src/components/Character";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -22,8 +23,9 @@ const App = () => {
 
   console.log(characters);
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
+    <div>
+      >
+      <Character />;
     </div>
   );
 };
