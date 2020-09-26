@@ -8,6 +8,8 @@ const CharacterCard = styled.div`
   display: flex;
   flex-wrap: wrap;
   background-color: pink;
+  text-transform: lowercase;
+  font-family: "Courier New";
   width: 100%;
 `;
 

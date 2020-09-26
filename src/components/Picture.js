@@ -1,7 +1,11 @@
 import React from "react";
 
-const Picture = () => {
-  return <div>This is the picture component</div>;
+const Picture = ({ image }) => {
+  return (
+    <div>
+      <img src={image} alt="above character" />
+    </div>
+  );
 };
 
 export default Picture;
