@@ -3,11 +3,21 @@ import React from "react";
 import Name from "./Name";
 import Picture from "./Picture";
 import Info from "./Info";
+import styled from "styled-components";
 
+const CharacterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 3px;
+  justify-content: center;
+  width: 29%;
+  margin: 15px 17px 10px 1px;
+`;
 const Character = ({ character }) => {
   console.log(character);
   return (
-    <div>
+    <CharacterContainer>
       <Name characterName={character.name} living={character.status} />
       <Picture image={character.image} />
       <Info
@@ -15,7 +25,7 @@ const Character = ({ character }) => {
         species={character.species}
         type={character.type}
       />
-    </div>
+    </CharacterContainer>
   );
 };
 

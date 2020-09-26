@@ -7,7 +7,7 @@ import styled from "styled-components";
 const CharacterCard = styled.div`
   display: flex;
   flex-wrap: wrap;
-  background-color: pink;
+  background-image: url("https://digitaladdictsblog.com/wp-content/uploads/2019/01/shutterstock_295846730.jpg");
   text-transform: lowercase;
   font-family: "Courier New";
   width: 100%;
