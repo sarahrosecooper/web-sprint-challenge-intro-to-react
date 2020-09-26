@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Character from "../src/components/Character";
+import styled from "styled-components";
+
+const CharacterCard = styled.div`
+  background-color: red;
+  width: 200px;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -23,10 +29,11 @@ const App = () => {
 
   console.log(characters);
   return (
-    <div>
-      >
-      <Character />;
-    </div>
+    <CharacterCard>
+      {characters.map((character) => {
+        return <Character key={character.id} character={character} />;
+      })}
+    </CharacterCard>
   );
 };
 
